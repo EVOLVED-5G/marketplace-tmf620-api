@@ -53,4 +53,10 @@ You can achieve this also by using docker compose. So run
 docker-compose up --build -d
 ```
 
-In order to run the containers.
+And the docker container will be built and run. The app will then be available via
+[localhost:8080](http://localhost:8080).
+
+If you want to access the app from another Docker container (that runs on the same Docker network),
+you should use the docker container name instead of `localhost`:
+
+[http://evolved5g_pilot_tmf_api_container:8080](http://evolved5g_pilot_tmf_api_container:8080)

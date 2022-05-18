@@ -8,13 +8,13 @@ services:
     networks:
       - docker_evolved5g_net
 
-  tmf655:
+  app:
     container_name: evolved5g_pilot_tmf_api_container
     build:
       context: .
       dockerfile: Dockerfile
     image: tmforumorg/api-changemanagement_tmf-655:4.0.0
-    ports: [ '8620:8080' ]
+    ports: [ '8080:8080' ]
     stdin_open: true
     tty: true
     extra_hosts:
